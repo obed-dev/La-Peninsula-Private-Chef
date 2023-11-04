@@ -3,6 +3,22 @@
     padding: 0;
 }
 
+  :root  { 
+
+     --primary-color: #A3A660;
+     --secondary-color: #F1F2CE;
+     --third-color: #A3A660;
+     --fourth-color:#8C5E35;
+     --fifth-color:#592D14;
+
+  };
+
+html { 
+    box-sizing: border-box;
+}
+
+
+
 body { 
 
     background-color: aliceblue;
