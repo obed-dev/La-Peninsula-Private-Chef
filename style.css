@@ -1,27 +1,24 @@
-* { 
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-  :root  { 
+:root {
+  --primary-color: #a3a660;
+  --secondary-color: #f1f2ce;
 
-     --primary-color: #A3A660;
-     --secondary-color: #F1F2CE;
-     --third-color: #A3A660;
-     --fourth-color:#8C5E35;
-     --fifth-color:#592D14;
-
-  };
-
-html { 
-    box-sizing: border-box;
+  --third-color: #8c5e35;
+  --fourth-color: #592d14;
 }
 
-
-
-body { 
-
-    background-color: aliceblue;
+html {
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
 
+nav { 
 
+   display: flex;
+   align-items: center;
+
+}
