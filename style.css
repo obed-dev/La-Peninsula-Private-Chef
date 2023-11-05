@@ -9,16 +9,74 @@
 
   --third-color: #8c5e35;
   --fourth-color: #592d14;
+
+  --fuente-heading: "Nunito Sans";
 }
 
 html {
   box-sizing: border-box;
   background-color: #ffffff;
 }
+#heading { 
 
-nav { 
+  font-size: 30px;
+  color: var(--primary-color);
+}
+span { 
+  font-size: 25px;
+  color: var(--fourth-color);
+}
+br { 
+  display: none;
+}
+.collapse { 
 
    display: flex;
    align-items: center;
+   justify-content: center;
+   
+  }
 
+
+
+
+
+#logo-lapeninsula { 
+
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
 }
+
+@media only screen and (max-width: 978px ){ 
+  #logo-lapeninsula { 
+
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+   #heading { 
+
+     font-size: 25px;
+   }
+   span { 
+    font-size: 20px;
+   }
+   
+}
+
+@media only screen and (max-width: 450px ) { 
+  #logo-lapeninsula { 
+
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+  #heading { 
+
+    font-size: 20px;
+  }
+   span { 
+    font-size: 15px;
+   }
+};
