@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -16,19 +17,20 @@
 html {
   box-sizing: border-box;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 #heading { 
 
-  font-size: 30px;
+  font-size: 2.2rem;
   color: var(--primary-color);
+  font-family: "SodoSans-Black";
 }
 span { 
-  font-size: 25px;
+  font-size: 2rem;
   color: var(--fourth-color);
+  font-family: "SodoSans-Light";
 }
-br { 
-  display: none;
-}
+
 .collapse { 
 
    display: flex;
@@ -37,7 +39,9 @@ br {
    
   }
 
-
+.nav-menu { 
+  display: none;
+}
 
 
 
@@ -57,15 +61,53 @@ br {
   }
    #heading { 
 
-     font-size: 25px;
+     font-size: 1.7rem;
    }
    span { 
-    font-size: 20px;
-   }
    
+   
+    font-size: 1.5rem;
+   }
+    
+.nav-menu { 
+
+    
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 15px;
+     box-sizing: border-box;
+     background-color: var(--secondary-color);  
+   
+     
+}  
+.nav-burger-menu { 
+   list-style: none; 
+ 
+ 
+
+}  
+    
+ 
+
+   .menu-links { 
+       font-size: 1.9em;
+       font-family: "SodoSans-Black";
+        color: var(--fourth-color);      
+          padding: 18px;
+         text-decoration: none;
+         display: flex;
+        justify-content: center;
+         align-items: center;
+         text-align: center;
+         
+
+
+   }
+    
 }
 
-@media only screen and (max-width: 450px ) { 
+@media only screen and (max-width: 525px ) { 
   #logo-lapeninsula { 
 
     width: 5rem;
@@ -74,9 +116,11 @@ br {
   }
   #heading { 
 
-    font-size: 20px;
+    font-size: 1.2rem;
   }
    span { 
-    font-size: 15px;
+    font-size: 1rem;
    }
 };
+
+
