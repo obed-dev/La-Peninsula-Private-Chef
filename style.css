@@ -44,10 +44,21 @@ span {
 .collapse { 
 
    display: flex;
-   align-items: center;
-   justify-content: center;
+   justify-content: flex-end;
+   font-size: 2rem;
+   font-family: "SodoSans-Black";
    
+   
+  } 
+  .nav-item { 
+    font-size: 2rem;
+    font-family: "SodoSans-Black";
+    color: #a3a660;
+
   }
+  
+
+  
 
 .nav-menu { 
   display: none;
