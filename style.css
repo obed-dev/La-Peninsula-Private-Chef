@@ -29,6 +29,16 @@ span {
   font-size: 2rem;
   color: var(--fourth-color);
   font-family: "SodoSans-Light";
+} 
+.heading-1 { 
+
+    font-size: 2.5rem;
+    font-family: "SodoSans-Black";
+   color: var(--third-color);
+ text-align: center;
+
+   padding: 10rem;
+
 }
 
 .collapse { 
@@ -51,7 +61,23 @@ span {
   height: 7rem;
   border-radius: 50%;
 }
+   .container  { 
+       width: 100%;
+       padding: 1rem;
 
+   }
+
+   
+
+img{ 
+   width: 100%;
+   height: 90%;
+   border-radius: 7px;
+
+
+
+
+}
 @media only screen and (max-width: 978px ){ 
   #logo-lapeninsula { 
 
