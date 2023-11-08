@@ -31,13 +31,22 @@ span {
   font-family: "SodoSans-Light";
 } 
 .heading-1 { 
-
+ 
+  
     font-size: 2.5rem;
     font-family: "SodoSans-Black";
    color: var(--third-color);
  text-align: center;
 
-   padding: 10rem;
+   
+}
+
+.row { 
+
+   display: flex;
+   
+   justify-content: center;
+   text-align: center;
 
 }
 
@@ -73,10 +82,16 @@ span {
   border-radius: 50%;
 }
    .container  { 
-       width: 100%;
-       padding: 1rem;
+       width: 80%;
+       
+       display: flex;
+       justify-content: center;
+     
+       align-items: center;
+      margin-top: 4rem;
 
    }
+  
 
    
 
@@ -85,10 +100,26 @@ img{
    height: 90%;
    border-radius: 7px;
 
+}
+#column-main-photo { 
+
+ text-align: center;
+
+   
+}
 
 
+#profile-photo { 
+
+  width: 60%;
+  height: 50%;
+  border-radius: 50%;
+  padding: 2rem;
+ 
 
 }
+
+
 @media only screen and (max-width: 978px ){ 
   #logo-lapeninsula { 
 
