@@ -11,7 +11,7 @@
   --third-color: #8c5e35;
   --fourth-color: #592d14;
 
-  --fuente-heading: "Nunito Sans";
+  --fuente-heading: "SodoSans-Black";
 }
 
 html {
@@ -73,7 +73,13 @@ span {
   display: none;
 }
 
+hr { 
+  width: 100%;
 
+
+  padding: 5rem;
+  color: var(--primary-color);
+}
 
 #logo-lapeninsula { 
 
@@ -89,6 +95,8 @@ span {
      
        align-items: center;
       margin-top: 4rem;
+      margin-bottom: 8rem;
+      padding: 3rem;
 
    }
   
@@ -104,6 +112,7 @@ img{
 #column-main-photo { 
 
  text-align: center;
+ gap: 10rem;
 
    
 }
@@ -120,7 +129,7 @@ img{
 }
 
 
-@media only screen and (max-width: 978px ){ 
+@media only screen and (max-width: 991px ){ 
   #logo-lapeninsula { 
 
     width: 6rem;
@@ -192,3 +201,22 @@ img{
 };
 
 
+@media only screen and (max-width: 991px) {
+  #column-main-photo { 
+
+    text-align: center;
+  
+   
+      
+   }
+   
+}
+
+#button:hover { 
+
+  font-size: 19px;
+  color: #f1f2ce;
+  
+  font-family: var(--fuente-heading);
+  background-color: var(--third-color);
+}
