@@ -14,25 +14,7 @@ $(document).ready(function burgerMenu() {
 
 
 });
-//Image slider 
-$(document).ready(function slider () {
-   
-
-    let currentIndex = 2;
-    let slides = $('slide').length;
-    let totalSlides = slides;
-    
-    function slideShow(index) {
-        slides.slice(2).show();
-        
-
-        
-
-    };
-
-     
 
 
 
 
-});
