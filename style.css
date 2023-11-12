@@ -26,7 +26,6 @@ html {
   font-family: "SodoSans-Black";
 }
 span { 
-  font-size: 2rem;
   color: var(--fourth-color);
   font-family: "SodoSans-Light";
 } 
@@ -35,8 +34,8 @@ span {
   
     font-size: 2.5rem;
     font-family: "SodoSans-Black";
-   color: var(--third-color);
- text-align: center;
+    color: var(--third-color);
+    text-align: center;
 
    
 }
@@ -55,13 +54,13 @@ span {
    display: flex;
    justify-content: flex-end;
    font-size: 2rem;
-   font-family: "SodoSans-Black";
+   font-family: var(--fuente-heading);
    
    
   } 
   .nav-item { 
     font-size: 2rem;
-    font-family: "SodoSans-Black";
+    font-family: var(--fuente-heading);
     color: #a3a660;
 
   }
@@ -87,44 +86,306 @@ hr {
   height: 7rem;
   border-radius: 50%;
 }
-   .container  { 
-       width: 80%;
-       
-       display: flex;
-       justify-content: center;
-     
-       align-items: center;
-      margin-top: 4rem;
-      margin-bottom: 8rem;
-      padding: 3rem;
 
-   }
+/* Style de hero*/
+.hero{
+  font-family: var(--fuente-heading);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(./assets/385895864_188016790996697_4544315095629458020_n.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero h1{
+  color: white;
+  font-size: 3em;
+}
+.Text-var4{
+  font-size: 1em;
+  color: var(--primary-color);
+  text-shadow: 1px 1px #592d14;
+}
+.hero p{
+  color: white;
+  font-size: 1.7em;
+}
+.hero button{
+  background-color: var(--primary-color);
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+}
+.hero button a{
+  text-decoration: none;
+  color: black;
+}
+
+main{
+  font-family: "SodoSans-Black";
+}
+
+  /*style de la seccion del chef */
+
+.container-chef{
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+.text-chef{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 50px;
+}
+.text-chef h1{
+  color: var(--primary-color);
+}
+.text-chef p{
+  color: var(--fourth-color);
+}
+.text-chef span{
+  text-decoration: bold;
+}
+#profile-photo{
+  width: 350px;
+  height: 350px;
+  border-radius: 250px;
+}
+
+
+/*Servicios*/
+.services-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 70vh;
+}
+.services{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   
-
-   
-
-img{ 
-   width: 100%;
-   height: 90%;
-   border-radius: 7px;
-
 }
-#column-main-photo { 
+.services-card{
+  width: 300px;
+  height: 250px;
+  margin: 50px;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 3px;
+}
+.services-card h3{
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.services-card p{
+  
+  margin-top: 25px;
+}
+#uno{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  )
+  ,url(./assets/386339689_884539863012099_2754825756536271712_n.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#dos{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  )
+  ,url(./assets/386114543_1013587939948814_7535052110147376445_n.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#tres{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  )
+  ,url(./assets/WhatsApp\ Image\ 2023-10-31\ at\ 6.10.06\ PM.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
- text-align: center;
- gap: 10rem;
+/*Feedback, seccion 3*/
+.feedback{
+  width: 100%;
+  height: 50vh;
+  background-color: var(--secondary-color);
+}
 
-   
+/*Reserva*/
+.reserva{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  )
+  ,url(./assets/WhatsApp\ Image\ 2023-10-31\ at\ 6.10.07\ PM.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.reserva h1{
+  font-size: 4em;
+  font-weight: bolder;
+  color: white;
+}
+.reserva a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.reserva button{
+  background-color: var(--primary-color);
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/*se agrega galeria de imagenes*/
+.secondary-cards{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.top-card{
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bottom-card{
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card{
+  width: 300px;
+  height: 150px;
+  background-color: #592d14;
+  margin: 5px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.card img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  
+}
+/*mapa*/
+.mapa{
+  width: 100%;
+  height: 45vh;
+  background-color: var(--secondary-color);
+  /*el background es temporal, debe quedar en blanco*/
 }
 
 
-#profile-photo { 
 
-  width: 60%;
-  height: 50%;
-  border-radius: 50%;
-  padding: 2rem;
- 
+
+/*form de contacto*/
+.info-container{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-form form, .campo, textarea{
+  width: 500px;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9px;
+}
+textarea{
+  height: 120px;
+  
+}
+.campo, textarea{
+  border-radius: 5px;
+  padding: 12px;
+  border:  solid rgba(0, 0, 0, 0.1);
+}
+.btn-enviar{
+  background-color: var(--primary-color);
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.info{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+}
+
+
+
+
+
+/*Footer*/
+.footer-container{
+  background-color: #592d14;
 
 }
 
