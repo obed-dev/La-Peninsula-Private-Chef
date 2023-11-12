@@ -19,8 +19,8 @@ $(document).ready(function burgerMenu() {
 
 
 $(document).ready(function() {
-    var currentIndex = 1; // Inicia con la segunda imagen para que la primera esté en el centro
-    var slideWidth = $('.slide').width();
+    let currentIndex = 1; // Inicia con la segunda imagen para que la primera esté en el centro
+    let slideWidth = $('.slide').width();
 
     $('#nextBtn').click(function() {
         currentIndex++;
@@ -33,7 +33,7 @@ $(document).ready(function() {
     });
 
     function updateCarousel() {
-        var translateValue = -currentIndex * slideWidth;
+        let translateValue = -currentIndex * slideWidth;
         $('.carousel').css('transform', 'translateX(' + translateValue + 'px)');
     }
 });
