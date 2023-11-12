@@ -384,9 +384,21 @@ textarea{
 
 
 /*Footer*/
-.footer-container{
-  background-color: #592d14;
+#footer {
+   display: flex;
+   align-items: center;
+  
+  background-color: var(--primary-color);
 
+  padding: 1rem;
+
+}
+
+
+
+.icons {
+    width: 3rem;
+    height: 3rem;
 }
 
 
