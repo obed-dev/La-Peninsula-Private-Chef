@@ -1,43 +1,19 @@
 $(document).ready(function() {
-    let currentIndex = 0;
-    let slides = $('.slide');
-    let totalSlides = slides.length;
+    var currentIndex = 1; // Inicia con la segunda imagen para que la primera esté en el centro
+    var slideWidth = $('.slide').width();
 
-    function showSlide(index) {
-        
-        slides.hide();
-
-    
-        let firstIndex = index % totalSlides;
-        let secondIndex = (index + 1) % totalSlides;
-        let thirdIndex = (index + 2) % totalSlides;
-
-      
-        slides.eq(firstIndex).fadeIn();
-        slides.eq(secondIndex).fadeIn();
-        slides.eq(thirdIndex).fadeIn();
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        showSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        showSlide(currentIndex);
-    }
-
-
-    let interval = setInterval(nextSlide, 5000);
-
-    
-    $('.slider').hover(function() {
-        clearInterval(interval);
-    }, function() {
-        interval = setInterval(nextSlide, 5000);
+    $('#nextBtn').click(function() {
+        currentIndex++;
+        updateCarousel();
     });
 
-   
-    showSlide(currentIndex);
+    $('#prevBtn').click(function() {
+        currentIndex--;
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        var translateValue = -currentIndex * slideWidth;
+        $('.carousel').css('transform', 'translateX(' + translateValue + 'px)');
+    }
 });

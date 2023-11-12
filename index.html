@@ -55,31 +55,39 @@
     <main>   
       <!--Hero, necesita imagen de fondo, h1, p y boton solamente -->
       <section>
+        
         <div class="hero">
+          <div class="container-fluid"></div>
           <h1>Disfruta del <span class="Text-var4">mejor</span> servicio de Catering en Cobano</h1>
           <p>Deleitate con exquisitos sabores y presentaciones <br> unicas que sorprenderan a tus invitados</p>
           <button>
             <a href="">Reserva ahora!</a>
           </button>
         </div>
+        </div>
+      
       </section>
     <!-- finaliza hero-->
 
 
       <section>
-        <div class="container-chef">
-          <img src="./assets/386163252_1903139880071979_3925224397418002461_n.jpg" id="profile-photo" alt="">
+   
+        <div   class="container-chef">
+            
+           <img src="./assets/386163252_1903139880071979_3925224397418002461_n.jpg" id="profile-photo" alt="">
           <div class="text-chef">
             <h1>Daphinie Robleto <br>Private Chef</h1>
             <p>
               Bienvenidos a <span>La Peninsula</span>, descubre la magia culinaria de <span>Daphinie Robleto</span>. <br> Con una mezcla única de creatividad y tradición, <span>Daphinie</span> transforma ingredientes frescos en experiencias gastronómicas inolvidables. <br> Su enfoque personalizado y atención a los detalles aseguran que cada evento sea único y memorable. <br>¡Embárcate en un viaje culinario excepcional con nosotros!
             </p>
         </div>
+  
       </section>
       
       <!--Necesitamos que el orden de las secciones sea estrategica.
       Colocaremos los servicios de inmediato, el cliente necesita ver eso cuanto antes--> 
       <section>
+        
         <div class="services-container">
 
             <h2>Servicios</h2>
@@ -99,14 +107,25 @@
             </div>
           </div>
         </div>
+      
       </section>
       
       
       <!--En esta section vamos a mostrar los feedback de clientes-->
       <section>
-        <div class="feedback">
-          En construccion el API para jalar feedback de insta
-        </div>
+        <div class="carousel-container">
+          <div class="carousel">
+              <div class="slide"><img  src="assets/recomendacion-1.jpg" alt="Imagen 1"></div>
+              <div class="slide"><img src="assets/recomendacion-2.jpg" alt="Imagen 2"></div>
+              <div class="slide"><img src="assets/recomendacion-3.jpg" alt="Imagen 3"></div>
+              <div class="slide"><img src="assets/recomendacion-4.jpg" alt="Imagen 3"></div>
+              <!-- Repite las imágenes para crear un efecto de bucle -->
+              <div class="slide"><img src="assets/recomendacion-5.jpg" alt="Imagen 1"></div>
+              <div class="slide"><img src="assets/recomendacion-6.jpg" alt="Imagen 2"></div>
+          </div>
+      </div>
+          <button id="prevBtn">Anterior</button>
+    <button id="nextBtn">Siguiente</button>
       </section>
       <section>
         <div class="reserva">
@@ -189,7 +208,12 @@
       </div>
   </div>
 </footer>
-
+<i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
+><img
+  src="https://static.vecteezy.com/system/resources/previews/001/500/306/non_2x/arrow-upward-icon-free-vector.jpg"
+  class="socicon up-arrow"
+  alt="desplazarse-hacia-arriba"
+/></i>
 
     <script
       src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
