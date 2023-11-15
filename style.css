@@ -40,6 +40,8 @@ span {
    
 }
 
+
+
 .row { 
 
    display: flex;
@@ -85,6 +87,8 @@ hr {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 /* Style de hero*/
@@ -397,8 +401,22 @@ textarea{
 
 
 .icons {
-    width: 3rem;
-    height: 3rem;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+ 
+  transition: all 0.5s ease;
+  background-color: var(--primary-color);
+    
+}
+
+.icons:hover { 
+
+  height: 50px;
+  width: 50px;
 }
 
 
@@ -560,3 +578,4 @@ button {
   padding: 10px 20px;
   font-size: 16px;
 }
+
