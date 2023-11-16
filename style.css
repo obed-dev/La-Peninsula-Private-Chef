@@ -141,39 +141,79 @@ main{
 
   /*style de la seccion del chef */
 
-.container-chef{
-  width: 100%;
-  height: 65vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
+  .container-chef {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
 }
-.text-chef{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-left: 50px;
+
+.text-chef {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
 }
-.text-chef h1{
-  color: var(--primary-color);
+
+#profile-photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 250px;
 }
-.text-chef p{
-  color: var(--fourth-color);
+
+.text-chef h1 {
+    color: var(--primary-color);
 }
-.text-chef span{
-  text-decoration: bold;
+
+.text-chef p {
+    color: var(--fourth-color);
 }
-#profile-photo{
-  width: 350px;
-  height: 350px;
-  border-radius: 250px;
+
+.text-chef span {
+    text-decoration: bold;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .container-chef {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-chef {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #profile-photo {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    #profile-photo {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .text-chef h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-chef p {
+        font-size: 1rem;
+    }
 }
 
 
 /*Servicios*/
-.services-container{
+.services-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,65 +221,64 @@ main{
   width: 100%;
   height: 70vh;
 }
-.services{
+
+.services {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 }
-.services-card{
+
+.services-card {
   width: 300px;
   height: 250px;
-  margin: 50px;
+  margin: 20px; 
   color: #ffffff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding: 3px;
+  padding: 15px; 
 }
-.services-card h3{
+
+.services-card h3 {
   font-weight: bolder;
   margin-top: 10px;
+  font-size: 1.5rem; 
 }
-.services-card p{
-  
-  margin-top: 25px;
+
+.services-card p {
+  margin-top: 15px;
+  font-size: 1rem; 
 }
-#uno{
+
+
+#uno,
+#dos,
+#tres {
   background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.7),
-    rgba(0,0,0,0.7)
-  )
-  ,url(./assets/386339689_884539863012099_2754825756536271712_n.jpg);
+      0deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+  ),
+  url(./assets/386339689_884539863012099_2754825756536271712_n.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-#dos{
-  background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.7),
-    rgba(0,0,0,0.7)
-  )
-  ,url(./assets/386114543_1013587939948814_7535052110147376445_n.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+
+/* Responsive CSS using media queries */
+@media only screen and (max-width: 768px) {
+  .services-card {
+      width: 60%; 
+  }
 }
-#tres{
-  background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.7),
-    rgba(0,0,0,0.7)
-  )
-  ,url(./assets/WhatsApp\ Image\ 2023-10-31\ at\ 6.10.06\ PM.jpeg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+
+@media only screen and (max-width: 576px) {
+  .services-card {
+      width: 90%;
+  }
 }
 
 /*Feedback, seccion 3*/
