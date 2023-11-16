@@ -156,12 +156,14 @@ main{
     flex-direction: column;
     text-align: center;
     margin-left: 50px;
+  
 }
 
 #profile-photo {
     width: 350px;
     height: 350px;
     border-radius: 250px;
+    margin: 0 20px;
 }
 
 .text-chef h1 {
@@ -181,17 +183,22 @@ main{
     .container-chef {
         flex-direction: column;
         align-items: center;
+        height: auto;
+        
     }
 
     .text-chef {
         margin-left: 0;
         margin-top: 20px;
+        margin-bottom: 3rem;
+        width: 100%;
     }
 
     #profile-photo {
         width: 250px;
         height: 250px;
-        margin-bottom: 20px;
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -199,7 +206,8 @@ main{
     #profile-photo {
         width: 200px;
         height: 200px;
-        margin-top: 30px;
+        margin-top: 2rem;
+   margin-bottom: 2rem;
     }
 
     .text-chef h1 {
@@ -219,6 +227,8 @@ main{
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: 2rem;
+   margin-bottom: 2rem;
   width: 100%;
   height: 70vh;
 }
@@ -277,7 +287,8 @@ main{
     position: relative;
     flex-direction: column;
     justify-content: center;
-    
+    margin-top: 2rem;
+   margin-bottom: 2rem;
     width: 100%;
     height: 85vh;
     
@@ -297,7 +308,8 @@ main{
     position: relative;
     flex-direction: column;
     justify-content: center;
-    
+   margin-top: 2rem;
+   margin-bottom: 2rem;
     width: 100%;
     height: 100%;
    
