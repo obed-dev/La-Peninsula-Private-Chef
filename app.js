@@ -47,3 +47,73 @@ $(document).ready(function() {
       }, 300 );
     });
   });
+
+
+
+  //scroll events menu main nav-bar
+  $(document).ready(function() {
+    $("#main").click(function(e) {
+
+      e.preventDefault();
+    
+      let destino = $(".container-chef");
+      let destinoPosicion = destino.offset().top;
+
+      $("html, body").animate({
+        scrollTop: destinoPosicion
+      }, 300 );
+    });
+
+    $("#about").click(function(e) {
+
+      e.preventDefault();
+    
+      let destino = $(".services-container");
+      let destinoPosicion = destino.offset().top;
+
+      $("html, body").animate({
+        scrollTop: destinoPosicion
+      }, 300 );
+    });
+
+    $("#services").click(function(e) {
+
+      e.preventDefault();
+    
+      let destino = $(".reserva");
+      let destinoPosicion = destino.offset().top;
+
+      $("html, body").animate({
+        scrollTop: destinoPosicion
+      }, 300 );
+    });
+    
+
+    $("#contact").click(function(e) {
+
+      e.preventDefault();
+    
+      let destino = $(".info-container");
+      let destinoPosicion = destino.offset().top;
+
+      $("html, body").animate({
+        scrollTop: destinoPosicion
+      }, 300 );
+    });
+
+    
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
