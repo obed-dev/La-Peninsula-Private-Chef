@@ -105,6 +105,60 @@ $(document).ready(function() {
     });
 
 
+    //burger menu links
+    $(document).ready(function() {
+      $("#home").click(function(e) {
+  
+        e.preventDefault();
+      
+        let destino = $(".container-chef");
+        let destinoPosicion = destino.offset().top;
+  
+        $("html, body").animate({
+          scrollTop: destinoPosicion
+        }, 300 );
+      });
+  
+      $("#products").click(function(e) {
+  
+        e.preventDefault();
+      
+        let destino = $(".services-container");
+        let destinoPosicion = destino.offset().top;
+  
+        $("html, body").animate({
+          scrollTop: destinoPosicion
+        }, 300 );
+      });
+  
+      $("#service-burger-menu").click(function(e) {
+  
+        e.preventDefault();
+      
+        let destino = $(".reserva");
+        let destinoPosicion = destino.offset().top;
+  
+        $("html, body").animate({
+          scrollTop: destinoPosicion
+        }, 300 );
+      });
+      
+  
+      $("#contact-me").click(function(e) {
+  
+        e.preventDefault();
+      
+        let destino = $(".info-container");
+        let destinoPosicion = destino.offset().top;
+  
+        $("html, body").animate({
+          scrollTop: destinoPosicion
+        }, 300 );
+      });
+  
+      
+      });
+
 
 
 
