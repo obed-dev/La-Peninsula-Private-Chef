@@ -48,6 +48,17 @@ $(document).ready(function() {
     });
   });
 
+  
+  $(window).scroll(function() {
+    var scrollPosition = $(this).scrollTop();
+
+    // Adjust the value (100 in this case) to control when the button appears
+    if (scrollPosition > 100) {
+      $("#desplazarse-hacia-arriba").fadeIn();
+    } else {
+      $("#desplazarse-hacia-arriba").fadeOut();
+    }
+  });
 
 
   //scroll events menu main nav-bar
@@ -158,7 +169,6 @@ $(document).ready(function() {
   
       
       });
-
 
 
 
