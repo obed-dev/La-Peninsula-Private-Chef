@@ -52,13 +52,22 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scrollPosition = $(this).scrollTop();
 
-    // Adjust the value (100 in this case) to control when the button appears
     if (scrollPosition > 100) {
       $("#desplazarse-hacia-arriba").fadeIn();
     } else {
       $("#desplazarse-hacia-arriba").fadeOut();
     }
   });
+
+  //funcion para crear el nav transparente 
+
+  $(window).scroll(function(){
+    var header = $("header");
+    header.toggleClass("abajo", $(this).scrollTop() > 0);
+   
+    
+
+});
 
 
   //scroll events menu main nav-bar
@@ -128,6 +137,7 @@ $(document).ready(function() {
         $("html, body").animate({
           scrollTop: destinoPosicion
         }, 300 );
+        $('.nav-menu').hide();
       });
   
       $("#products").click(function(e) {
@@ -140,6 +150,7 @@ $(document).ready(function() {
         $("html, body").animate({
           scrollTop: destinoPosicion
         }, 300 );
+        $('.nav-menu').hide();
       });
   
       $("#service-burger-menu").click(function(e) {
@@ -152,6 +163,7 @@ $(document).ready(function() {
         $("html, body").animate({
           scrollTop: destinoPosicion
         }, 300 );
+        $('.nav-menu').hide();
       });
       
   
@@ -165,6 +177,7 @@ $(document).ready(function() {
         $("html, body").animate({
           scrollTop: destinoPosicion
         }, 300 );
+        $('.nav-menu').hide();
       });
   
       

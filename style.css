@@ -16,7 +16,7 @@
 
 html {
  
-  background-color: #ffffff;
+
   scroll-behavior: smooth;
 }
 
@@ -31,51 +31,65 @@ body {
 
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-  
-  
-  
- 
+	width: 100%;
+			
+			transition: 0.7s;
+    }
+
+
+			
+		
+			
+   
+
+
+header.abajo{
+  background: #181818;
+  padding: 10px 15px;
   
 }
 
-
-
-
-
+@media only screen and (max-width: 390px ){
+  header.abajo{
+    background: #181818;
+    padding: 0;
+    
+    
+  } 
+}
 
 
 #heading { 
-
-  font-size: 2.2rem;
-  color: var(--primary-color);
-  font-family: "SodoSans-Black";
-}
-span { 
-  color: var(--fourth-color);
-  font-family: "SodoSans-Light";
-} 
-.heading-1 { 
  
   
-    font-size: 2.5rem;
-    font-family: "SodoSans-Black";
-    color: var(--third-color);
-    text-align: center;
+  font-size: 2.5rem;
+  font-family: "SodoSans-Black";
+  color: var(--secondary-color);
 
-   
+
+ 
 }
+
+
+
+
+span { 
+  color: #b18967;
+  font-family: "SodoSans-Light";
+} 
+
 #navbarSupportedContent .nav-link{ 
 
      font-size: 2.2rem;
      font-family: "SodoSans-Black";
-     color: var(--primary-color);
+     color: var(--secondary-color);
  }
 #main:hover, #about:hover, #services:hover, #contact:hover{
-  color: var(--fourth-color);
+  color: var(--primary-color);
   transform: scale(1.1);
   transition: 0.7s;
   transition: translateY(2);
@@ -114,13 +128,7 @@ span {
   display: none;
 }
 
-hr { 
-  width: 100%;
 
-
-  padding: 5rem;
-  color: var(--primary-color);
-}
 
 #logo-lapeninsula { 
 
@@ -128,7 +136,8 @@ hr {
   height: 7rem;
   border-radius: 50%;
   filter: brightness(1.1);
-  mix-blend-mode: multiply;
+  
+  
 }
 
 /* Style de hero*/
