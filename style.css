@@ -159,6 +159,8 @@ span {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+
 .hero h1{
   color: white;
   font-size: 3em;
@@ -836,3 +838,27 @@ button {
   font-size: 16px;
 }
 
+#iframe { 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50dvh;
+    
+    margin: 10rem ;
+ 
+
+}
+
+iframe { 
+  border-radius: 10px;
+  box-shadow: 0 0 5px #181818;
+  padding: 0.5rem;
+}
+
+#iframe:hover { 
+
+
+  transform: scale(1.05);
+  transition: 0.7s;
+}

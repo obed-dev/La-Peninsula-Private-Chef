@@ -50,7 +50,7 @@ $(document).ready(function() {
 
   
   $(window).scroll(function() {
-    var scrollPosition = $(this).scrollTop();
+    let scrollPosition = $(this).scrollTop();
 
     if (scrollPosition > 100) {
       $("#desplazarse-hacia-arriba").fadeIn();
@@ -62,7 +62,7 @@ $(document).ready(function() {
   //funcion para crear el nav transparente 
 
   $(window).scroll(function(){
-    var header = $("header");
+    let header = $("header");
     header.toggleClass("abajo", $(this).scrollTop() > 0);
    
     
@@ -184,11 +184,6 @@ $(document).ready(function() {
       });
 
  
-
-
-
-
-
 
 
 
