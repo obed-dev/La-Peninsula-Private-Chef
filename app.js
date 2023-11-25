@@ -69,6 +69,56 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function() {
+    
+   
+    window.sr = ScrollReveal();
+   
+   
+
+
+      sr.reveal (".container-chef" , {   
+        duration: 3000,
+        origin: "bottom",
+        distance: '400px'
+
+    
+      } ) 
+
+      sr.reveal (".reserva" , {   
+        duration: 3000,
+        origin: "left",
+        distance: '400px'
+
+    
+      } ) 
+      sr.reveal (".secondary-cards" , {   
+        duration: 3500,
+        origin: "bottom",
+        distance: '400px'
+
+    
+      } ) 
+
+      sr.reveal ("iframe" , {   
+        duration: 2500,
+        origin: "bottom",
+        distance: '400px'
+
+    
+      } ) 
+
+      
+      sr.reveal (".info-container" , {   
+        duration: 2500,
+        origin: "left",
+        distance: '400px'
+
+    
+      } ) 
+});
+
+
 
   //scroll events menu main nav-bar
   $(document).ready(function() {

@@ -53,6 +53,10 @@ header.abajo{
   
 }
 
+
+
+
+
 @media only screen and (max-width: 390px ){
   header.abajo{
     background: #181818;
@@ -148,7 +152,7 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 90vh;
+  height: 100dvh;
   background-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.5),
@@ -301,6 +305,9 @@ main{
  
 }
 
+
+
+
 .services-card {
   width: 300px;
   height: 250px;
@@ -366,6 +373,8 @@ main{
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+
 
 /* Responsive CSS using media queries */
 @media only screen and (max-width: 768px) {
@@ -843,9 +852,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50dvh;
+    height: 40dvh;
     
-    margin: 10rem ;
+    margin: 20rem ;
  
 
 }
@@ -856,10 +865,5 @@ iframe {
   padding: 0.5rem;
 }
 
-#iframe:hover { 
 
-
-  transform: scale(1.05);
-  transition: 0.7s;
-}
 
