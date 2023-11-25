@@ -852,9 +852,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40dvh;
+    height: auto;
     
-    margin: 20rem ;
+    margin: 15rem ;
  
 
 }
