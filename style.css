@@ -158,7 +158,7 @@ span {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
   )
-  ,url(./assets/385895864_188016790996697_4544315095629458020_n.jpg);
+  ,url(./assets/385895864_188016790996697_4544315095629458020_n-transformed.jpeg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -187,8 +187,7 @@ span {
   
 }
 #main-btn1:hover, #main-btn2:hover{
-  box-shadow: 0 0 40px 40px var(--fourth-color) inset;
-  transform: scale(1.05);
+  transform: scale(1.15);
   transition: 0.7s;
 }
 
@@ -271,7 +270,7 @@ main{
         width: 200px;
         height: 200px;
         margin-top: 2rem;
-   margin-bottom: 2rem;
+        margin-bottom: 2rem;
     }
 
     .text-chef h1 {
@@ -302,7 +301,7 @@ main{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
- 
+
 }
 
 
@@ -343,35 +342,47 @@ main{
 #uno{
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
+      rgba(0, 0, 0, 0.40),
+      rgba(0, 0, 0, 0.40)
   ),
   url(./assets/386114543_1013587939948814_7535052110147376445_n.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+#uno:hover{
+  transform: scale(1.25);
+  transition: 0.7s;
+}
 #dos{
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
+      rgba(0, 0, 0, 0.40),
+      rgba(0, 0, 0, 0.40)
   ),
   url(./assets/386054708_1289952791891231_8994450358082699706_n.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+#dos:hover{
+  transform: scale(1.25);
+  transition: 0.7s;
+}
 #tres {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
+      rgba(0, 0, 0, 0.40),
+      rgba(0, 0, 0, 0.40)
   ),
   url(./assets/386339689_884539863012099_2754825756536271712_n.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+#tres:hover{
+  transform: scale(1.25);
+  transition: 0.7s;
 }
 
 
