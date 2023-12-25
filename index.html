@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Peninsula Private Chef</title>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('Il5nJlAS85u2wmL_8')
+</script>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
@@ -40,7 +46,7 @@
                <nav class="nav-menu"> 
                      <ul class="nav-burger-menu">
                          <li> <a class="menu-links" href="#" id="home"> Home </a> </li>
-                         <li><a class="menu-links" href="#" id="products" > Products </a> </li>
+                         <li><a class="menu-links" href="#" id="products" > About </a> </li>
                          <li><a class="menu-links" href="#" id="service-burger-menu"> Services </a>  </li>
                          <li><a class="menu-links" href="#" id="contact-me"> Contact </a> </li>
                      </ul>
@@ -63,10 +69,10 @@
         <div class="hero">
           <div class="container-fluid">
           
-          <h1>Disfruta del <span class="Text-var4">mejor</span> servicio de Catering en Costa Rica </h1>
-          <p>Deleitate con exquisitos sabores y presentaciones <br> unicas que sorprenderan a tus invitados</p>
+          <h1>Enjoy the <span class="Text-var4">best</span> catering service in Costa Rica </h1>
+          <p>Delight yourself with exquisite flavors and unique presentations <br> that will surprise your guests!</p>
           <button id="main-btn1">
-            <a href="">Reserva ahora!</a>
+            <a href="">Book Now!</a>
           </button>
         </div>
         </div>
@@ -83,7 +89,7 @@
           <div class="text-chef" class="container-fluid">
             <h1>Daphinie Robleto <br>Private Chef</h1>
             <p>
-              Bienvenidos a <span>La Peninsula</span>, descubre la magia culinaria de <span>Daphinie Robleto</span>. <br> Con una mezcla única de creatividad y tradición, <span>Daphinie</span> transforma ingredientes frescos en experiencias gastronómicas inolvidables. <br> Su enfoque personalizado y atención a los detalles aseguran que cada evento sea único y memorable. <br>¡Embárcate en un viaje culinario excepcional con nosotros!
+              Welcome to <span>La Peninsula</span>, discover the culinary magic of <span>Daphinie Robleto</span>. <br> With a unique blend of creativity and tradition, <span>Daphinie</span> transforms fresh ingredients into unforgettable dining experiences. <br> Their personalized approach and attention to detail ensure that each event is unique and memorable. <br>Embark on an exceptional culinary journey with us!
             </p>
         </div>
   
@@ -94,20 +100,20 @@
       <section>
         <div class="services-container" id="services" class="container-fluid">
 
-            <h2>Servicios</h2>
+            <h2>Services</h2>
 
           <div class="services"  >
             <div class="services-card" id="uno">
-              <h3 id="h3service">Catering para eventos sociales</h3>
-              <p>Deliciosos menus personalizados para tu celebracion, con opciones vegetarianas, veganas y sin gluten. ¡Sorprende a tus invitados!</p>
+              <h3 id="h3service">Catering for social events</h3>
+              <p>Delicious customized menus for your celebration, with vegetarian, vegan and gluten free options, surprise your guests with a delicious menu!</p>
             </div>
             <div class="services-card" id="dos">
-              <h3 id="h3service">Catering para bodas</h3>
-              <p>Creamos banquetes de ensueño para tu gran día. Desde cócteles de bienvenida hasta exquisitos postres, cuidamos cada detalle para que tu boda sea perfecta.</p>
+              <h3 id="h3service">Wedding Catering</h3>
+              <p>We create dream banquets for your big day. From welcome cocktails to exquisite desserts, we take care of every detail to make your wedding perfect!</p>
             </div>
             <div class="services-card" id="tres">
-              <h3 id="h3service">Catering para eventos corporativos</h3>
-              <p>Ofrecemos servicios de Catering profesionales para conferencias, reuniones y eventos corporativos. Menús personalizados para impresionar a tus clientes y empleados.</p>
+              <h3 id="h3service">Catering for corporate events</h3>
+              <p>We offer professional catering services for conferences, meetings and corporate events. Customized menus to impress your clients and employees!</p>
             </div>
           </div>
         </div>
@@ -116,9 +122,9 @@
 
       <section>
         <div class="reserva">
-          <h1>Disfruta de nuestro <br>catering exclusivo</h1>
+          <h1>Enjoy our <br>exclusive catering</h1>
           <button id="main-btn2">
-            <a href="">Reserva ahora</a>
+            <a href="">Book now</a>
           </button>
         </div>
       </section>
@@ -183,11 +189,11 @@
                       <div class="info-container">
                           <div class="container-form">
                               <h1>Contact me!</h1>
-                              <form action="#" autocomplete="off">
-                                  <input type="text" placeholder="Ingresa tu nombre" required class="campo">
-                                  <input type="email" placeholder="Ingresa tu email" required class="campo">
-                                  <textarea name="Mensaje" placeholder="Ingresa tu mensaje" cols="30" rows="10"></textarea>
-                                  <input type="submit" name="Enviar" value="Enviar mensaje" class="btn-enviar">
+                              <form action="" autocomplete="off" id="form">
+                                  <input type="text" placeholder="Type your name" required class="campo" name="from_name" id="from_name">
+                                  <input type="email" placeholder="Type your email" required class="campo"  name="email_id" id="email_id" >
+                                  <textarea  placeholder="Type your message" cols="30" rows="10"  name="message" id="message"></textarea>
+                                  <input type="submit" name="Enviar" value="Send Message" class="btn-enviar" id="button">
                               </form>
                           </div>
                       </div>
@@ -210,11 +216,11 @@
   <div class="container py-3">
     <div class="col">
       <div >
-        <h2>Contacto</h2>
-        <p>Correo electrónico: laroktrattorias@gmail.com </p>
-        <p>Teléfono: +506 8716 9014</p>
+        <h2>Contact</h2>
+        <p>Email: laroktrattorias@gmail.com </p>
+        <p>Phone: +506 8716 9014</p>
       </div>
-      <h2>Síguenos en Redes Sociales</h2>
+      <h2>Follow us on Social Media</h2>
       <div class="col" >
         <ul class="list-unstyled">
           <a href="https://m.facebook.com/p/La-Pen%C3%ADnsula-Private-Chef-100063404359414/" target="_blank">
@@ -246,7 +252,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
-   
+   <script src="email.js"></script>
   </body>
 </html>

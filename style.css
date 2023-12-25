@@ -894,7 +894,7 @@ textarea {
 
 .btn-enviar:hover {
   background-color: var(--fourth-color);
-  transform: scale(1.15);
+  transform: scale(1);
   transition: 0.7s;
 }
 
