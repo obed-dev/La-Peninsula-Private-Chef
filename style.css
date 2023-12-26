@@ -335,6 +335,14 @@ main{
   flex-direction: column;
   align-items: stretch;
   padding: 15px; 
+  
+  
+}
+
+.services-card:hover { 
+  transform: scale(1.15);
+      transition: 0.8s;
+    
 }
 
 .services-card h3 {
