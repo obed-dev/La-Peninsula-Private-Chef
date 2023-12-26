@@ -92,7 +92,7 @@ span {
      font-family: "SodoSans-Black";
      color: var(--secondary-color);
  }
-#main:hover, #about:hover, #services:hover, #contact:hover{
+#main:hover, #about:hover, #services:hover, #contact:hover , .menu-links:hover {
   color: var(--primary-color);
   transform: scale(1.1);
   transition: 0.7s;
@@ -368,10 +368,7 @@ main{
   background-position: center center;
   background-repeat: no-repeat;
 }
-#uno:hover{
-  transform: scale(1.25);
-  transition: 0.7s;
-}
+
 #dos{
   background-image: linear-gradient(
       0deg,
@@ -383,10 +380,7 @@ main{
   background-position: center center;
   background-repeat: no-repeat;
 }
-#dos:hover{
-  transform: scale(1.25);
-  transition: 0.7s;
-}
+
 #tres {
   background-image: linear-gradient(
       0deg,
@@ -398,10 +392,7 @@ main{
   background-position: center center;
   background-repeat: no-repeat;
 }
-#tres:hover{
-  transform: scale(1.25);
-  transition: 0.7s;
-}
+
 
 
 
@@ -579,14 +570,7 @@ main{
   
 }
 
-.card:hover  {
-  
-   scale: 1.2;
-   background-color: var(--primary-color);
-   box-shadow: 0 0 10px var(--secondary-color);
-   z-index: 1;
 
- }
 @media only screen and (max-width:1024px) {
   .secondary-cards{
     height: 80vh;
@@ -725,7 +709,8 @@ scale: 1.5;
          
 
 
-   }
+   } 
+   
     
 }
 
@@ -926,4 +911,15 @@ textarea {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+}
+@media only screen and (max-width: 991px ) {
+  #boton-color{ 
+
+   background-color: var(--secondary-color);
+  }
+  #boton-color:hover { 
+    background-color: var(--primary-color);
+    transition: 2ms;
+
+  } 
 }

@@ -247,5 +247,22 @@ $(document).ready(function() {
 
 
 
+    $('.main-btn').click(function (e) {
+
+      e.preventDefault();
+
+       let destino = $('.info-container');
+       let destinoPosicion = destino.offset().top;
+
+       let posicionAjustada = destinoPosicion - 200;
+     
+       $("html, body").animate({
+        scrollTop: posicionAjustada
+      }, 300 );
+      
+    });
+    
+
+
 
  
