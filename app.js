@@ -78,7 +78,7 @@ $(document).ready(function() {
 
 
       sr.reveal (".container-chef" , {   
-        duration: 3000,
+        duration: 2500,
         origin: "bottom",
         distance: '400px'
 
@@ -101,7 +101,7 @@ $(document).ready(function() {
       } ) 
 
       sr.reveal ("iframe" , {   
-        duration: 2500,
+        duration: 2000,
         origin: "bottom",
         distance: '400px'
 
@@ -128,9 +128,11 @@ $(document).ready(function() {
     
       let destino = $(".container-chef");
       let destinoPosicion = destino.offset().top;
+    
+      let posicionAjustada = destinoPosicion - 120;
 
       $("html, body").animate({
-        scrollTop: destinoPosicion
+        scrollTop: posicionAjustada
       }, 300 );
     });
 
@@ -140,9 +142,10 @@ $(document).ready(function() {
     
       let destino = $(".services-container");
       let destinoPosicion = destino.offset().top;
+      let posicionAjustada = destinoPosicion - 120;
 
       $("html, body").animate({
-        scrollTop: destinoPosicion
+        scrollTop: posicionAjustada
       }, 300 );
     });
 
@@ -152,9 +155,10 @@ $(document).ready(function() {
     
       let destino = $(".reserva");
       let destinoPosicion = destino.offset().top;
+      let posicionAjustada = destinoPosicion - 130;
 
       $("html, body").animate({
-        scrollTop: destinoPosicion
+        scrollTop: posicionAjustada
       }, 300 );
     });
     
@@ -165,9 +169,10 @@ $(document).ready(function() {
     
       let destino = $(".info-container");
       let destinoPosicion = destino.offset().top;
+      let posicionAjustada = destinoPosicion - 200;
 
       $("html, body").animate({
-        scrollTop: destinoPosicion
+        scrollTop: posicionAjustada
       }, 300 );
     });
 
@@ -183,10 +188,12 @@ $(document).ready(function() {
       
         let destino = $(".container-chef");
         let destinoPosicion = destino.offset().top;
-  
+        let posicionAjustada = destinoPosicion - 120;
+
         $("html, body").animate({
-          scrollTop: destinoPosicion
+          scrollTop: posicionAjustada
         }, 300 );
+
         $('.nav-menu').hide();
       });
   
@@ -196,9 +203,10 @@ $(document).ready(function() {
       
         let destino = $(".services-container");
         let destinoPosicion = destino.offset().top;
+        let posicionAjustada = destinoPosicion - 120;
   
         $("html, body").animate({
-          scrollTop: destinoPosicion
+          scrollTop: posicionAjustada 
         }, 300 );
         $('.nav-menu').hide();
       });
@@ -209,9 +217,10 @@ $(document).ready(function() {
       
         let destino = $(".reserva");
         let destinoPosicion = destino.offset().top;
+        let posicionAjustada = destinoPosicion - 125;
   
         $("html, body").animate({
-          scrollTop: destinoPosicion
+          scrollTop: posicionAjustada
         }, 300 );
         $('.nav-menu').hide();
       });
@@ -223,9 +232,10 @@ $(document).ready(function() {
       
         let destino = $(".info-container");
         let destinoPosicion = destino.offset().top;
+        let posicionAjustada = destinoPosicion - 200;
   
         $("html, body").animate({
-          scrollTop: destinoPosicion
+          scrollTop: posicionAjustada
         }, 300 );
         $('.nav-menu').hide();
       });
