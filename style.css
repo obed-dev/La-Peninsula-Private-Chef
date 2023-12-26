@@ -561,14 +561,28 @@ main{
   margin: 5px;
   object-fit: cover;
   overflow: hidden;
+  
   transition-duration: 1s;
 }
 .card img{
   width: 100%;
   object-fit: cover;
+
  
   
-}
+  }
+  
+  .card:hover{
+    
+  
+      transform: scale(1.15);
+      transition: 0.7s;
+      z-index: 1;
+      border-color: #a3a660;
+    }
+    
+  
+
 
 
 @media only screen and (max-width:1024px) {
