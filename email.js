@@ -1,16 +1,15 @@
 const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+document.getElementById('form').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-   btn.value = 'Sending...';
+  btn.value = 'Sending...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_wudf80r';
+  const serviceID = 'default_service';
+  const templateID = 'template_wudf80r';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
       btn.value = 'Send Message';
       Swal.fire({
         position: "top",
@@ -19,22 +18,22 @@ document.getElementById('form')
         showConfirmButton: false,
         timer: 1500
       });
-    }, (err) => {
+
+      // Resetear el formulario después de enviar el mensaje
+      this.reset();
+    },
+    (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
       Swal.fire({
         icon: "error",
         title: "Oops...",
         text: "Something went wrong!",
-        
       });
-    });
-
-
-    document.addEventListener('DOMContentLoaded', function(){
-        let formulario = document.getElementById('form');
-        formulario.addEventListener('submit', function() {
-          formulario.reset();
-        });
-      });
+    }
+  );
 });
+
+
+    
+     
