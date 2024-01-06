@@ -92,6 +92,21 @@ span {
      font-family: "SodoSans-Black";
      color: var(--secondary-color);
  }
+
+@media only screen and  (max-width: 1067px ) and (min-width:992px )    {
+     
+  #heading { 
+
+    font-size: 1.9rem; 
+  } 
+  .nav-item { 
+    font-size: 1.9rem; 
+  }
+  }
+
+
+
+
 #main:hover, #about:hover, #services:hover, #contact:hover , .menu-links:hover {
   color: var(--primary-color);
   transform: scale(1.1);
@@ -114,12 +129,13 @@ span {
 
    display: flex;
    justify-content: flex-end;
-   font-size: 2rem;
+   font-size: 1.9rem;
    font-family: var(--fuente-heading);
    
    
   } 
   .nav-item { 
+  
     font-size: 2rem;
     font-family: var(--fuente-heading);
     color: #a3a660;
@@ -791,6 +807,7 @@ scale: 1.5;
   background-color: white;
   box-shadow: 1px 1px 1px;
   border-radius: 10px 10px 10px;
+  z-index: 10;
   
 }
 
