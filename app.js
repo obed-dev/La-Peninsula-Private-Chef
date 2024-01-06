@@ -97,6 +97,15 @@ $(document).ready(function() {
 
     
       } ) 
+
+      
+      sr.reveal (".contenedor" , {   
+        duration: 2500,
+        origin: "right",
+        distance: '400px'
+
+    
+      } )
 });
 
 
