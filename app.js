@@ -101,7 +101,7 @@ $(document).ready(function() {
       
       sr.reveal (".contenedor" , {   
         duration: 2500,
-        origin: "right",
+        origin: "bottom",
         distance: '400px'
 
     
