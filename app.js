@@ -29,16 +29,34 @@ $(document).ready(function() {
     });
   });
 
-  
-  $(window).scroll(function() {
-    let scrollPosition = $(this).scrollTop();
 
-    if (scrollPosition > 100) {
-      $("#desplazarse-hacia-arriba").fadeIn();
-    } else {
-      $("#desplazarse-hacia-arriba").fadeOut();
-    }
-  });
+  
+  // $(window).scroll(function() {
+  //   let scrollPosition = $(this).scrollTop();
+
+  //   if (scrollPosition > 100) {
+  //     $("#desplazarse-hacia-arriba").fadeIn();
+      
+  //   } else {
+  //     $("#desplazarse-hacia-arriba").fadeOut();
+  //   }
+  // });
+
+ 
+  $(document).ready(function() {
+    $(window).scroll(function() {
+        let scrollPosition = $(window).scrollTop();
+        let scrollUp = $("#desplazarse-hacia-arriba");
+        
+        if (scrollPosition > 100) {
+            scrollUp.css("opacity", "1");
+        } else {
+            scrollUp.css("opacity", "0");
+        }
+    });
+});
+
+
 
   //funcion para crear el nav transparente 
 

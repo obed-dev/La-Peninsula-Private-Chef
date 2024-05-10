@@ -844,16 +844,24 @@ scale: 1.5;
   bottom: 3%;
   cursor: pointer;
   padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
   
 }
 
 .socicon {
+ 
   width: 2rem;
   height: 2rem;
   background-color: white;
   box-shadow: 1px 1px 1px;
   border-radius: 10px 10px 10px;
   z-index: 10;
+  
+  
+ 
+  
   
 }
 
