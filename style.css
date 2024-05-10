@@ -42,8 +42,6 @@ header {
 
 
 			
-		
-			
    
 
 
@@ -184,6 +182,7 @@ span {
 .hero h1{
   color: white;
   font-size: 3em;
+  padding: 1rem;
 }
 .Text-var4{
   font-size: 1em;
@@ -193,6 +192,7 @@ span {
 .hero p{
   color: var(--secondary-color);
   font-size: 1.7em;
+  margin-top: 1rem;
 }
 #main-btn1{
   background-color: var(--primary-color);
@@ -216,6 +216,52 @@ span {
 main{
   font-family: "SodoSans-Black";
 }
+
+@media only screen and (max-width: 768px) {
+        
+	.hero h1{
+    color: white;
+    font-size: 2.5em;
+    padding: 1rem;
+  }
+  .Text-var4{
+    
+    font-size: 1em;
+    color: white;
+    text-shadow: 1px 1px #592d14;
+  }
+  .hero p{
+    color: var(--secondary-color);
+    font-size: 1.4em;
+    margin-top: 1rem;
+  }
+  #main-btn1{
+    background-color: var(--primary-color);
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    
+  }
+  #main-btn1:hover, #main-btn2:hover{
+    background-color: var(--fourth-color);
+    transform: scale(1.15);
+    transition: 0.7s;
+  }
+  
+  .hero button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  main{
+    font-family: "SodoSans-Black";
+  }
+}
+    
+
+
+
 
   /*style de la seccion del chef */
 
