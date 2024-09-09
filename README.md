@@ -16,22 +16,31 @@ Netlify: Website hosting and deployment.
 
 
 Features 💻👨‍💻
+
 Clean and professional design that reflects the exclusivity of the service.
+
 Dedicated sections for services, menus, and contact.
+
 Fully responsive, adapting to mobile devices, tablets, and desktops.
 
 
 
 Functionality  💻👨‍💻
+
 Home: Showcases the private chef services in La Peninsula.
+
 Menu: Displays a variety of gourmet dishes available.
+
 Contact: A form for users to book the chef’s services.
 
 
 Deployment 💻👨‍💻
+
 This project is deployed on Netlify and can be accessed via this link.
 
+
 How to Clone and Run the Project Locally
+
 Clone this repository:
 
 git clone https://github.com/your-username/la-peninsula-private-chef.git
@@ -39,9 +48,11 @@ git clone https://github.com/your-username/la-peninsula-private-chef.git
 Navigate to the project directory:
 
 cd la-peninsula-private-chef
+
 Open the index.html file in your browser to view the website locally.
 
 Screenshots
+
 Desktop View :
 
 
@@ -56,6 +67,7 @@ Mobile View :
 
 
 Credits💻👨‍💻
+
 Design & Development: [Obed-Dev].
 
 Deployment: Netlify.
