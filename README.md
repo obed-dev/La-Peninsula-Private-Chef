@@ -5,8 +5,13 @@ La Peninsula Private Chef is a professional website designed for a private chef 
 
 Technologies Used💻👨‍💻
 HTML5: Semantic content structure.
+
 CSS3: Visual styling and responsive design.
-JavaScript: Basic interactivity on the website.
+
+jQuery: Basic interactivity on the website.
+
+JavaScript Libraries (e.g., EmailJS): A basic contact platform integrated into the website, allowing users to send emails directly to the owner through the contact form. This provides a seamless and efficient way for visitors to get in touch without leaving the site.
+
 Netlify: Website hosting and deployment.
 
 
