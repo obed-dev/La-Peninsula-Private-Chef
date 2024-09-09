@@ -1,5 +1,6 @@
 La Peninsula Private Chef - Website 💻👨‍💻
 
+
 Description
 La Peninsula Private Chef is a professional website designed for a private chef service, offering exclusive culinary experiences in Costa Rica. The site allows visitors to learn about the services offered, explore menus, and contact the chef to book a unique dining experience.
 
@@ -36,20 +37,20 @@ Contact: A form for users to book the chef’s services.
 
 Deployment 💻👨‍💻
 
-This project is deployed on Netlify and can be accessed via this link.
+This project is deployed on Netlify and can be accessed via this link https://la-peninsula-private-chef.netlify.app/
 
 
 How to Clone and Run the Project Locally
 
-Clone this repository:
+1.Clone this repository:
 
 git clone https://github.com/your-username/la-peninsula-private-chef.git
 
-Navigate to the project directory:
+2.Navigate to the project directory:
 
 cd la-peninsula-private-chef
 
-Open the index.html file in your browser to view the website locally.
+3.Open the index.html file in your browser to view the website locally.
 
 Screenshots
 
